@@ -1,0 +1,50 @@
+#score {
+    text-align: center;
+}
+
+#jogo {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#dino {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 150px;
+    background-image: url(img/dinossauro.png);
+    background-size: cover;
+}
+
+.animacao {
+    animation: dino 500ms infinite linear;
+}
+
+#cacto {
+    height: 70px;
+    width: 40px;
+    position: relative;
+    top: 80px;
+    left: 460px;
+    background-image: url(img/cacto.png);
+    background-size: cover;
+    animation: cacto 1s infinite linear;
+}
+
+/*animação do cacto/*/
+
+@keyframes cacto{
+    0%{left: 460px;}
+    100%{left: -40px;}
+}
+
+/*animação do dinossauro/*/
+
+@keyframes dino{
+    0%{top: 150px;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 150px;}
+}
